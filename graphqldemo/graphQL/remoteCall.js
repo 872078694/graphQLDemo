@@ -51,6 +51,7 @@ function handleResponse(response) {
 
 function handleData(data) {
     console.log(data);
+    console.log(data.data);
 }
 
 function handleError(error) {
