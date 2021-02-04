@@ -7,17 +7,22 @@ var schema = buildSchema(`
   type Query {
     name: String
     age: Int
+    rollThreeDice: [Int]
   }
 `);
  
 // The root provides a resolver function for each API endpoint
+// to be clear, you can consider it is a mongo db stuff like that
 var root = {
   name: () => {
     return 'Sijian Chen';
   },
   age: () =>{
       return 21;
-  }
+  },
+  rollThreeDice: () => {
+    return [1, 2, 3].map(_ => 1 + Math.floor(Math.random() * 6));
+  },
 };
  
 var app = express();
