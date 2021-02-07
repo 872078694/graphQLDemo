@@ -1,7 +1,7 @@
 
 const fetch = require("node-fetch");
-var dice = 3;
-var sides = 6;
+var dice = 4;
+var sides = 11;
 var query = `query RollDice($dice: Int!, $sides: Int) {
   rollDice(numDice: $dice, numSides: $sides)
 }`;

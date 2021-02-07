@@ -19,6 +19,6 @@ var root = {
 };
  
 // Run the GraphQL query '{ hello }' and print out the response
-graphql(schema, '{age }', root).then((response) => {
+graphql(schema, '{hello,age }', root).then((response) => {
   console.log(response);
 });

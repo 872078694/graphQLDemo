@@ -71,10 +71,27 @@ app.listen(4000, () => {
   console.log('Running a GraphQL API server at localhost:4000/graphql');
 });
 
-// mutation {
-//     createMessage(input: {author: "andy", content: "hope is a good thing"}) {
-//       id
-//       author
-//       content
-//     }
-//   }
+
+// # mutation {
+//   #   createMessage(input: {author: "sijian", content: "i love coding"}) {
+//   #    id
+//   #    author
+//   #    content
+//   #  }
+//   # }   
+  
+//   # {
+//   #   getMessage(id:"442fa02dbe665b8f8407") {
+//   #     id
+//   #     author
+//   #     content
+//   #   }
+//   # }
+  
+//   # mutation {
+//   #   updateMessage(id:"442fa02dbe665b8f8407",input:{author: "sijian", content: "i don't love coding"}){
+//   #     id
+//   #     author
+//   #     content
+//   #   }
+//   # }
